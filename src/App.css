@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #67A5A5;
+  color: black;
+}
+
+.home-container, .contact-container, .projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 10%;
+  margin-left: 20px;
+}
+
+.home-text, .contact-text, .projects-text {
+  max-width: 40%;
+}
+
+.home-text h1, .contact-text h1, .projects-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.home-text p, .contact-text p, .projects-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.home-image img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.projects-container {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5% 10%;
+}
+
+.projects-container h1 {
+  font-size: 2.5rem;
+}
+
+.projects-container a {
+  color: #005f5f;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.projects-container a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #3d6d6d;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+.navbar.active {
+  transform: translateX(0);
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #2c5a5a;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+  z-index: 3;
+}
+
+.content {
+  margin-right: 0;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .home-container, .contact-container, .projects-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 5% 5%;
+    margin: 0 auto;
+  }
+  .home-text, .contact-text, .projects-text {
+    max-width: 90%;
+  }
+  .home-text h1, .contact-text h1, .projects-text h1 {
+    font-size: 2rem;
+  }
+  .home-image img {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .menu-toggle {
+    font-size: 1.2rem;
+    right: 10px;
+  }
+  .navbar {
+    width: 200px;
+  }
+}
