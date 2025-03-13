@@ -8,18 +8,23 @@ const About = () => {
       <div className="about-text">
         <h1>About Me</h1>
         <hr/>
+        
         <p>
-        I have always had a curiosity about the way things work under the hood. When I was a child, I had a children's book with ideas for mechanical toys you could make yourself. My favorite was a little car made from a paper plate and a small motor. In school, I had a habit of taking pens apart in class to see the different parts, then putting them back together.
-
-        For the past few years, my favorite hobby has been baking. I love how a small change in one measurement can drastically change the outcome of the baked good. (To the left is a picture of one of my croissants, and on my home page, some of my Koiugn-Amann!)
-
-        I have always loved puzzles and piecing things together, so when I began learning about software engineering, I knew it was the right field for me.
-
-        I can't wait to work together and get to know each other!        </p>
+        I've always been curious about how things work under the hood. As a child, I had a book filled with ideas for building mechanical toys, and my favorite project was a small car made from a paper plate and a tiny motor. In school, I couldn't resist taking pens apart just to see how their parts fit together—then putting them back, hopefully without getting ink everywhere.
+        </p>
+        <p>
+        In recent years, baking has become my favorite hobby. I love how a slight change in a measurement can completely transform the final result. (On this page, you'll see one of my croissants, and on my home page, some of my Kouign-Amann!)
+        </p>
+        <p>
+        I've always enjoyed puzzles and problem-solving, so when I started learning about software engineering, it immediately felt like the right fit. The challenge of piecing together logic and structure reminds me of everything I love about tinkering and baking—precision, creativity, and discovery.
+        </p>
+        <p>
+        I'm excited to collaborate and get to know each other!
+        </p>
       </div>
 
       <div className="about-image">
-        <img src="/images/headshot.png" alt="about" />
+        <img src="/images/croissant.JPG" alt="about" />
       </div>
     </div>
     </>

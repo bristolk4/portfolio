@@ -26,20 +26,54 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100vh;
+  max-height: 90%;
   padding: 0 10%;
   margin-left: 20px;
+  min-height: 100vh;
 }
+
+.about-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 90%;
+  padding: 0 10%;
+  margin-left: 20px;
+  min-height: 100vh;
+}
+
+/* .about-container {
+  display: flex;
+  
+} */
 
 .home-text, .contact-text, .projects-text {
   max-width: 40%;
+  max-height: 40%;
+  padding: 30px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.about-text {
+  max-width: 40%;
+  max-height: 40%;
+  padding: 30px;
+  margin-bottom: 50px;
+  margin-right: 40px;
+  display: block;
 }
 
 h1 {
   font-family: "Libre Baskerville", serif;
   font-weight: 600;
-  font-style:normal;
+  font-style: normal;
   font-size: 5rem;
+}
+
+.contact-text h1 {
+  font-size: 7rem;
 }
 
 .condiv {
@@ -54,23 +88,23 @@ h1 {
   padding: 10px
 }
 
-.home-text p, .contact-text p, .projects-text p {
+.home-text p, .contact-text p, .projects-text p, .about-text p {
   font-size: 1rem;
   line-height: 1.6;
 }
 
 .home-image img {
-  max-width: 400px;
+  max-width: 600px;
   height: auto;
-  border-radius: 10px;
-  margin-right: 20px;
+  margin-right: 40px;
+  border-radius: 20px; 
 }
 
 .about-image img {
-  max-width: 400px;
+  max-width: 800px;
   height: auto;
-  border-radius: 10px;
-  margin-right: 20px;
+  margin-left: 40px;
+  border-radius: 20px; 
 }
 
 .projects-container {
@@ -81,7 +115,7 @@ h1 {
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 50px;
   justify-content: center;
   padding-top: 80px;
 }
@@ -89,13 +123,12 @@ h1 {
 .project-card {
   display: flex;
   flex-direction: column;
-  width: calc(33.333%-20px);
+  /* width: calc(33.333%-20px); */
   max-width: 300px;
   background-color: #e3c974;
   padding: 15px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .project-image {
@@ -202,23 +235,24 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .home-container, .contact-container {
+  .home-container, .contact-container, .about-container {
     flex-direction: column;
     text-align: center;
     padding: 5% 5%;
     margin: 0 auto;
     max-width: 100vw;
   }
-  .home-text, .contact-text, .projects-text {
+  .home-text, .contact-text, .projects-text, .about-text {
     max-width: 90%;
   }
-  .home-text h1, .contact-text h1, .projects-text h1 {
-    font-size: 2rem;
+  .home-text h1, .contact-text h1, .projects-container h1, .about-text h1 {
+    font-size: 3rem;
   }
   .home-image img, .about-image img {
     justify-content: center;
     align-items: center;
     margin: 0;
+    border-radius: 30px;
   }
   .menu-toggle {
     display: block;
